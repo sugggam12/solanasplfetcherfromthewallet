@@ -31,8 +31,8 @@ const publicKeys = [
 (async () => {
     for (const key of publicKeys) {
         const publicKey = new web3.PublicKey(key);
-        const solanaConnection = new web3.Connection("https://empty-side-glade.solana-mainnet.quiknode.pro/551ea601dd3c6a5b099df87aa2972ed0500b6da9/", {
-            wsEndpoint: "wss://empty-side-glade.solana-mainnet.quiknode.pro/551ea601dd3c6a5b099df87aa2972ed0500b6da9/",
+        const solanaConnection = new web3.Connection("http://ny-node2.hiddenodes.com:8899/", {
+            wsEndpoint: "ws://ny-node2.hiddenodes.com:8900/",
 			 maxSupportedTransactionVersion: 1 // Add this parameter
         });
 
